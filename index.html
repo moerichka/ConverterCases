@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="content__header">
+                    <h1>Конвертер падежей</h1>
+            </header>
+            <main class="content__main">
+                <p>Для работы приложения необходимо написать слово в Иминительном падеже и выбрать падеж для конвертации</p>
+                <form action="" class="main__form form">
+
+                    <div class="form__input form__input-reverse">
+                        <input type="text" name="inputWord" class="form__inputWord text" id="inputWord" required>
+                        <label class="form__label-text" for="inputWord">Ваше слово:</label>
+                    </div>
+
+                    <div class="form__input">
+                        <input type="radio" name="case" id="ImiCase" value="ImiCase" checked>
+                        <label class="form__label" for="ImiCase">Иминительный падеж</label>
+                    </div>
+
+                    <div class="form__input">
+                        <input type="radio" name="case" id="RodCase" value="RodCase">
+                        <label class="form__label" for="RodCase">Родительный падеж</label>
+                    </div>
+
+                    <div class="form__input">
+                        <input type="radio" name="case" id="DatCase" value="DatCase">
+                        <label class="form__label" for="DatCase">Дательный падеж</label>
+                    </div>
+
+                    <div class="form__input">
+                        <input type="radio" name="case" id="VinCase" value="VinCase">
+                        <label class="form__label" for="VinCase">Винительный падеж</label>
+                    </div>
+
+                    <div class="form__input">
+                        <input type="radio" name="case" id="TvorCase" value="TvorCase">
+                        <label class="form__label" for="TvorCase">Творительный падеж</label>
+                    </div>
+
+                    <div class="form__input">
+                        <input type="radio" name="case" id="PredCase" value="PredCase">
+                        <label class="form__label" for="PredCase">Предложный падеж</label>
+                    </div>
+
+                    <div class="form__buttonWrapper"><button class="form__submit" type="submit">Конвертировать</button></div>
+
+                    <div class="form__input form__input-reverse">
+                        <input type="text" class="main__OutputResult OutputResult text" id="OutputResult" readonly>
+                        <label class="form__label-text" for="OutputResult">Результат:</label>
+                    </div>
+                </form>
+            </main>
+            <footer class="content__footer">
+                <h4>Выполнено Исаковым Михаилом</h4>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
